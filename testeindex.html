@@ -13,11 +13,11 @@
 <body>
     <section id="topo">
         <header>
-            <div class="navbar=fixed nav-wrapper">
+            <div class="navbar=fixed nav-wrapper"> 
                 <nav class="row">
                     <div class="col s7 m4 offset-m1"> 
                         <a href="#"><img class="logo" src="imagem/Tech-In_logo.png.png" alt="TECH IN" alt=""></a><!--.img não está aparecendo, não identifiquei o erro-->
-                    </div><!--.col-->
+                    </div><!--.coluna--> co
                     <div class="col" s3 m7 offset-s1>
 						<a href="#" class="sidenav-trigger" data-targer="mobile-menu"><i class="material-icons"></i>menu</i<></a>
 					</div><!--col-->					
@@ -29,34 +29,46 @@
                         <li><a href="#contato">Contato</a></li>
                         <li><a href="#" class="waves-effect waves-light btn">Menu</a></li>
                         </ul>
-					 </div><!--col-->
-                </nav>
-            </div><!--.navbar-->
+                     </div><!--col-->
+                     </div><!--.navbar-->
             <ul class="sidenav" id="mobile-menu"> <!--sidenav é para tela de celular,menu abre no lado esquerdo-->
-                <li><a href="#quemsomos">Quem somos</a></li><!--AQUI TB FALTA COLOCAR A DESCRIÇÃO-->
+                <li><a href="#quemsomos">Quem somos</a></li><!--AQUI TB FALTA COLOCAR A DESCRIÇÃO, PARA QUANDO O USUÁRIO CLICAR, APARECER-->
                 <li><a href="#objetivo">Objetivo</a></li>
                 <li><a href="#aquemsedestina">A quem se destina</a></li>
                 <li><a href="#oqueoferecemos">O que oferecemos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#" class="waves-effect waves-light btn">Menu</a></li>
                 </ul>
-        </header>
-         <div id="info" class="container"><!--PARTE DO TOPO-->
-            <dciv class="rom"> <!--linha-->
-            <div class="col s12 m7"> <!--coluna-->
-                <head><h2>Tecnologia Assistiva Na Educação Inclusiva</h2></head>
-                 <p> A tecnologia assistiva promove um horizonte de novas possibilidades de inclusão social de crianças e adolescentes com deficiência na sua fase escolar!</p>
-            </div> <!--rom-->
-            </div> <!--col-->
-         </div><!--info-->
-    </section><!--/section#top-->
+          </header>
 
-    <section id="oqueoferecemos">
+        <section id="topo">
+         <div id="info" class="container"><!--PARTE DO TOPO-->
+            <div class="rom"> <!--linha-->
+            <div class="col s12 m7"> <!--coluna-->
+            <head><h2>Tecnologia Assistiva Na Educação Inclusiva</h2></head>
+            <p> A tecnologia assistiva promove um horizonte de novas possibilidades de inclusão social de crianças e adolescentes com deficiência na sua fase escolar!</p>
+            </div> <!--rom-->
+            </div> <!--coluna--> 
+         </div><!--info-->
+        </section><!--/section#top-->
+
+        <section id="saibamais">
+            <div class="container">
+            <header><h3>SAIBA MAIS</h3>
+            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Deficiêcia Motora</a>
+            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Paralisia Cerebral discinética</a>
+            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Inclusão Escolar</a>
+            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Tecnologia Assistiva na Educação Inclusiva</a>
+            </header><!--saibamais-->
+            </div><!--container-->
+            </section><!--sectinsaibamais-->
+
+    <section id="bancoassistivos">
     <div class="container">
     <header><h3>BANCO ASSISTIVOS</h3></header>
     <p>Disponibilizamos gratuitamente conhecimentos e informações na temática da inclusão, da deficiência motora e paralisia cerebral discinética.
         Estabelecemos parcerias com instituições para a realização de pesquisa na área; Parcerias com profissionais da área;
-        Parcerias com fornecedores de produtos assistivos.</p>
+        Parcerias com fornecedores de produtos assistivos.</p>>
     <div class="row">
     <div class="col s12 m4">
     <div class="card">
@@ -64,21 +76,38 @@
     <img src="oqueoferecemo/imagem.png" alt="lápis adaptado para crianças"><!--aqui tem que colocar imagens dos produtos,nome e forcecedores-->
     </div><!--.card.imagem--><!--seguir aula 9 de cazé, falta alterar o css tb-->
     <header><h6>link:sitecompras.br</h6></header>
-
     </div><!---->
     </div><!--card.image-->
     </div><!--card-->
     </div><!--col-->
     </div><!--row (linha)-->
-    </section><!--/section#quemsomos-->
+    </section><!--/section#bancos assistivos--> 
 
-    <footer class="page-footter"><!--falta concluir essa parte é o rodapé -->
+
+         <section id="parceiros">
+            <div class="container">
+             <header><h3>PARCEIROS</h3>
+             <ul>
+             <li><a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">UFPE</a></li>
+             <li> <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">adolescentes</a></li>
+             <li> <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">aparecendo</a></li>
+             </ul>
+         </header><!--parceiros-->
+   </div><!--container-->
+   </section><!--sectionparceiros--> 
+
+        <section id="sugestoesedepoimentos">
+            <div class="container">
+            <header><h4>Sugestões e Depoimentos</h4>
+            </header><!--sugestoesedepoimentos-->
+            </div><!--container-->
+        </section><!--sectionsugestoesedepoimentos> teste 2
+
+
+    <footer class="page-footter"><!--AQUI É O RODAPÉ >
         <div class="container"><!--falta concluir-->
         </div><!--.container-->
-        </footer><!--rodapé> 
-
-
-
+        </footer><!--rodapé>
 
 
     <script src=" https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
