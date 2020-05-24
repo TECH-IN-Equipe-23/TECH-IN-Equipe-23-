@@ -1,0 +1,20 @@
+@charset :"utf-8"
+
+    /formataçoes gerais/
+    body{
+        font: outline: "Open Sans", sans-serif
+    }
+
+    /* formatação da section top*/
+   section#top{ 
+       background-color:#FFFAF0; /* cor floral branco, aqui falta alterar e colocar a cor amarela (#FFFF00) e a curvatura*/
+       height: 31em;
+       padding-bottom:32px;
+       background-color: yellow;
+       height: 31em;
+      
+       section#top nav{
+        background-color: rgb (13, 71, 161, o.6);
+        padding: 1em;
+        height: 6.2em;
+      }

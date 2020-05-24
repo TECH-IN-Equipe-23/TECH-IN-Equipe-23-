@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/layout.css" href="auto.css"/>
 </head>
 <body>
     <section id="topo">
         <header>
             <div class="navbar=fixed nav-wrapper"> 
                 <nav class="row">
-                    <div class="col s7 m4 offset-m1"><!--total de 12 colunas-->>
-                        <a href="#"><img style="float:left" class="logo" src="C:\Users\fa\Documents\Tech-In_logo.png.png"  alt="TECH IN" ></a><!--ajustar img logo no lado esquerdo da pg-->
+                    <div class="col s7 m4 offset-m1"><!--total de 12 colunas-->
+                    <a href="#"><img class="logo" src="C:\Users\fa\Documents\Tech-In_logo.png.png" alt="TECH IN" alt=""></a><!--ajustar img logo no lado esquerdo da pg-->
                     </div><!--.coluna-->
                     <div class="col" s3 m7 offset-s1> 
 						<a href="#" class="sidenav-trigger" data-targer="mobile-menu"><i class="material-icons"></i>menu</i<></a>
@@ -31,6 +31,7 @@
                         </ul>
                      </div><!--col-->
                      </div><!--.navbar-->
+
             <ul class="sidenav" id="mobile-menu"> <!--sidenav é para tela de celular,menu abre no lado esquerdo-->
                 <li><a href="#quemsomos">Quem somos</a></li><!--AQUI TB FALTA COLOCAR A DESCRIÇÃO, PARA QUANDO O USUÁRIO CLICAR, APARECER AS-->
                 <li><a href="#objetivo">Objetivo</a></li>
@@ -39,7 +40,6 @@
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#" class="waves-effect waves-light btn">Menu</a></li>
                 </ul>
-          </header>
 
         <section id="topo">
          <div id="info" class="container"><!-- AQUI PARTE DO TOPO-->
@@ -52,67 +52,149 @@
          </div><!--info-->
         </section><!--/section#top-->
 
-        <section id="saibamais">
-            <div class="container">
-            <header><h3>SAIBA MAIS</h3>
-            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Deficiêcia Motora</a>
-            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Paralisia Cerebral discinética</a>
-            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Inclusão Escolar</a>
-            <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Tecnologia Assistiva na Educação Inclusiva</a>
-            </header><!--saibamais-->
+    
+            <section id="saibamais"><!--TABS.materialize-->
+                <div class="container">
+                <header><h3>SAIBA MAIS</h3>
+            <div class="row">
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#deficienciamotora">Deficiência Motora</a></li>
+                    <li class="tab col s3"><a class="active" href="#paralisiacerebraldiscinetica">Paralisia Cerebral Discinética</a></li>
+                    <li class="tab col s3"><a class="active" href="#inclusaoescolar">Inclusão Escolar</a></li>
+                    <li class="tab col s3"><a class="active" href="#tecnologiaassistivanaeducacaoinclusiva">Tecnolodia assistiva na Educação Inclusiva</a></li>
+                  </ul>
+                </header><!--saibamais-->
             </div><!--container-->
             </section><!--sectinsaibamais-->
-
+  
     <section id="bancoassistivos">
-    <div class="container">
-    <header><h3>BANCO ASSISTIVOS</h3></header>
-    <p>Disponibilizamos gratuitamente conhecimentos e informações na temática da inclusão, da deficiência motora e paralisia cerebral discinética.
-        Estabelecemos parcerias com instituições para a realização de pesquisa na área; Parcerias com profissionais da área;
-        Parcerias com fornecedores de produtos assistivos.</p>>
-    <div class="row">
-    <div class="col s12 m4">
-    <div class="card">
-    <div class="card-image waves-effect waves-light waves-block">
-    <img src="oqueoferecemo/imagem.png" alt="lápis adaptado para crianças"><!--aqui tem que colocar imagens dos produtos,nome e forcecedores-->
-    </div><!--.card.imagem--><!--seguir aula 9 de cazé, falta alterar o css tb-->
-    <header><h6>link:sitecompras.br</h6></header>
-    </div><!---->
-    </div><!--card.image-->
-    </div><!--card-->
-    </div><!--col-->
-    </div><!--row (linha)-->
-    </section><!--/section#bancos assistivos--> 
-
-
-         <section id="parceiros">
+        <div class="container">
+        <header><h3>BANCO ASSISTIVOS</h3></header>
+        <p>Disponibilizamos gratuitamente conhecimentos e informações na temática da inclusão, da deficiência motora e paralisia cerebral discinética.
+            Estabelecemos parcerias com instituições para a realização de pesquisa na área; Parcerias com profissionais da área;
+            Parcerias com fornecedores de produtos assistivos.</p>
             <div class="container">
-             <header><h3>PARCEIROS</h3>
-             <ul>
-             <li><a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">UFPE</a></li>
-             <li> <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">adolescentes</a></li>
-             <li> <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">aparecendo</a></li>
-             </ul>
-         </header><!--parceiros-->
-   </div><!--container-->
-   </section><!--sectionparceiros--> 
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s3"><a href="#ThePencilGrip">The Pencil Grip</a> <a href="https://www.amazon.com.br/Pencil-Grip-Auxiliar-ergon%C3%B4mica-universal/dp/B004Y4H9MK" target="_blank"><img src="C:\Users\fa\Pictures\The Pencil Grip.jpg"></a></li>
+                    <li class="tab col s3"><a  href="cama">Tcama</a></li>
+                    <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                  </ul>
+        </div><!--col-->
+        </div><!--row (linha)-->
+        </section><!--/section#bancos assistivos--> 
+
+   <section id="parceiros">
+    <div class="container">
+     <header><h3>PARCEIROS</h3>
+        <p> Encontre aqui nossos Parceiros</p>
+   <div class="row">
+    <div class="col s12 m4">   
+      <div class="card">
+        <div class= "card-image waves-effect waves-light waves-block">
+          <img src="C:\Users\fa\Pictures\AACD.png" alt="AACD">
+        </div><!--.card.image-->
+        <div class="card-content">
+            <header><h6 class="activador card-title">AACD</h6></header>
+          <p>Associação de Apoio à Criança Deficiente é uma organização de grande relevância do tratamento de crianças com deficiências.</p>
+        </div><!--.card.contente-->
+
+        <div class="card-reveal">
+            <header><h6 class="card-title">Contato<i class="material-icons right">close</i></h6/header>
+            <p>A AACD fornece serviços de tratamentos médicos, com terapias, reabilitação, atividades escolares e esportivas. Contato:https://aacd.org.br/unidades/recife-pe
+            </p><!--paragrafo-->
+        <div class="card-action">
+        <a href="#">Contato</a>
+        </div><!--.card.action-->
+        </div><!--.card-reveal-->
+          
+          <div class="card-action">
+          <a href="#">Contato</a>
+          </div><!--.card.action-->
+          </div><!--card-->
+          </div><!--coluna-->
+          </div><!--row-->
+          </header><!--parceiros-->
+          </div><!--container-->
+          </section><!--sectionparceiros--> 
+
+        <div class="container">
+        <div class="row">
+        <div class="col s12 m4">   
+        <div class="card">
+        <div class= "card-image waves-effect waves-light waves-block">
+        <img src="C:\Users\fa\Pictures\PARCEIROS TECH IN\Logo-ufpe-2-2.png" alt="UFPE">
+        </div><!--.card.image-->
+        <div class="card-content">
+            <header><h6 class="activador card-title">UFPE</h6></header>
+          <p>O Departamento de terapia ocupacional oferta serviços no campo da terapia ocupacional.</p>
+        </div><!--.card.contente-->
+
+        <div class="card-reveal">
+            <header><h6 class="card-title">Contato<i class="material-icons right">close</i></h6/header>
+            <p> A principal finalidade do Departamento é desenvolver o ensino, pesquisa e extensão, com formação de profissionais, produção de conhecimentos e oferta de serviços no campo da Terapia Ocupacional. Contato: (81) 2126-8493
+            </p><!--paragrafo-->
+        <div class="card-action">
+        <a href="#">Contato</a>
+        </div><!--.card.action-->
+        </div><!--.card-reveal-->
+           
+        <div class="card-action">
+          <a href="#">Contato</a>
+        </div><!--.card.action-->
+          </div><!--card-->
+          </div><!--coluna-->
+          </div><!--row-->
+         </div><!--container-->
+
+        <div class="container">
+        <div class="row">
+        <div class="col s12 m4">   
+        <div class="card">
+        <div class= "card-image waves-effect waves-light waves-block">
+         <img src="C:\Users\fa\Pictures\PARCEIROS TECH IN\AEE.png" alt="AEE">
+        </div><!--.card.image-->
+        <div class="card-content">
+            <header><h6 class="activador card-title">ESCOLA NOSSO ESPAÇO AEE RECIFE</h6></header>
+        <p>Elimina as barreiras para a plena participação dos alunos considerando suas necessidades específicas.</p>
+        </div><!--.card.contente-->
+            
+        <div class="card-reveal">
+         <header><h6 class="card-title">Contato<i class="material-icons right">close</i></h6/header>
+        <p> O atendimento educacional especializado (AEE) é um serviço da educação especial que identifica, elabora, e organiza recursos pedagógicos e de acessibilidade. Contato: (81) 99750-3337</p>
+            <div class="card-action">
+               <a href="#">Contato</a>
+            </div><!--.card.action-->
+            </div><!--.card-reveal-->
+                      
+        <div class="card-action">
+            <a href="#">Contato</a>
+        </div><!--.card.action-->
+        </div><!--card-->
+        </div><!--coluna-->
+        </div><!--row-->
+        </div><!--container-->
 
         <section id="sugestoesedepoimentos">
             <div class="container">
             <header><h4>Sugestões e Depoimentos</h4>
             </header><!--sugestoesedepoimentos-->
             </div><!--container-->
-        </section><!--sectionsugestoesedepoimentos> teste 2
+        </section><!--sectionsugestoesedepoimentos> 
 
 
+            se
+          <div>
     <footer class="page-footter"><!--AQUI É O RODAPÉ >
-        <div class="container"><!--falta concluir-->
+        <div class="container"><!--->
         </div><!--.container-->
-        </footer><!--rodapé>
-
+    </footer><!--rodapé
 
     <script src=" https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
     <script src="js/auto.js "></script>
-</body>
+</body> 
 
 </html>
